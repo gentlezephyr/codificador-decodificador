@@ -1,0 +1,165 @@
+@import 'button';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../img/illustration-graphic-of-aesthetic-background-template-with-simple-and-minimalist-pastel-colors-vector.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    textarea {
+        width: 290px;
+        height: 560px;
+        resize: none;
+        outline: #985A40 1px solid;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #faf4ea;
+        color: #985A40;
+        font-size: 1rem;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    textarea::placeholder {
+        color: #985A40;
+    }
+
+    textarea:focus {
+        outline: 2px solid #7a462f;
+        outline-offset: 5px;
+    }
+
+    .output {
+        background-color: #faf4ea;
+        width: 290px;
+        height: 560px;
+        border: #985A40 2px solid;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.saidaTexto {
+    text-align: center;
+    color: #985A40;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.textoentrada {
+        /* width: 450px; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+}
+
+.textosaida {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.fraseLinda {
+    width: 200px;
+    color: #985A40;
+    font-size: 1.2rem;
+}
+
+
+.outrafrase {
+    display: none;
+}
+
+.outrosbotoes {
+    display: flex;
+    gap: 25px;
+}
+
+// Overlay
+.overlay-test {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(152, 90, 64, 0.745);
+    color: white;
+
+    p {
+        font-size: 1.8rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 20%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background: #f8e7e0;
+    }
+
+    main {
+        height: unset;
+    }
+
+    .boxes {
+        flex-direction: column;
+        margin-top: 20px;
+
+        textarea {
+            height: 350px;
+        }
+
+        .output {
+            height: 350px;
+        }
+    }
+
+    .textosaida {
+        margin-bottom: 20px;
+    }
+
+    .fraseLinda {
+        display: none;
+    }
+
+    .outrafrase {
+        display: block;
+        text-align: center;
+        width: 200px;
+        color: #985A40;
+    }
+    
+}

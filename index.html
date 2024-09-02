@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="./assets/style/main.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="overlay-test">
+        <p>Escreva algo na caixa de texto!</p>
+    </div>
+    <main>
+        <div class="boxes">
+            <div class="outrafrase">
+                "Codificar é como escrever uma carta secreta para o futuro: só quem conhece a chave pode desvendar a
+                magia por trás de cada linha de código." <strong>PS: Não use acentos!</strong>
+            </div>
+            <div class="textoentrada">
+                <textarea name="" id="campoTexto" placeholder="Se expresse..."></textarea>
+                <div class="buttons">
+                    <button onclick="encriptarTexto()">Codificar</button>
+                    <button onclick="desencriptarTexto()">Decodificar</button>
+                </div>
+            </div>
+            <div class="textosaida">
+                <div class="output">
+                    <p class="saidaTexto"></p>
+                </div>
+                <div class="outrosbotoes">
+                    <button onclick="copiarTexto()">Copiar</button>
+                    <button onclick="limpar()">Limpar</button>
+                </div>
+               
+            </div>
+            <div class="fraseLinda">
+                "Codificar é como escrever uma carta secreta para o futuro: só quem conhece a chave pode desvendar a
+                magia por trás de cada linha de código." <strong>PS: Não use acentos!</strong>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
